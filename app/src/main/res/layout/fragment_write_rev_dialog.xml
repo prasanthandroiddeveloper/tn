@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tripnetra.tripnetra.hotels.fragments.Write_Review_Dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/write_your_review"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="#0E76BD"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="4dp"
+                        android:text="@string/name"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:textSize="20sp"
+                        android:text="@string/star_symbol"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/nametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLength="30"
+                    android:maxLines="3"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/box_grey_bottom"
+                    android:inputType="text"
+                    android:hint="@string/enter_name"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:paddingStart="3dp"
+                        android:paddingEnd="4dp"
+                        android:text="@string/booking_number"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff0000"
+                        android:textSize="20sp"
+                        android:text="@string/star_symbol"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/bookidtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:maxLength="14"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/box_grey_bottom"
+                    android:inputType="text"
+                    android:hint="@string/enter_booking_number"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:text="@string/rating"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="start"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/service"
+                        android:textColor="#0e76bd"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="start"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#0e76bd"
+                        android:text="@string/quality"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="start"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#0e76bd"
+                        android:text="@string/facilities"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="start"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#0e76bd"
+                        android:text="@string/condition"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:id="@+id/serviceRBar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:isIndicator="false"
+                        android:progressDrawable="@drawable/star_rate"
+                        android:numStars="5" />
+
+
+                    <RatingBar
+                        android:id="@+id/qualtyRBar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:isIndicator="false"
+                        android:progressDrawable="@drawable/star_rate"
+                        android:numStars="5" />
+
+                    <RatingBar
+                        android:id="@+id/facltyRBar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:isIndicator="false"
+                        android:progressDrawable="@drawable/star_rate"
+                        android:numStars="5" />
+
+                    <RatingBar
+                        android:id="@+id/condtnRBar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:isIndicator="false"
+                        android:progressDrawable="@drawable/star_rate"
+                        android:numStars="5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:text="@string/review"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/reviewtext"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="start"
+                android:padding="10dp"
+                android:ems="10"
+                android:maxLength="200"
+                android:layout_margin="5dp"
+                android:textAlignment="textStart"
+                android:background="@drawable/box_full_round_corner"
+                android:inputType="textMultiLine"
+                tools:ignore="LabelFor"/>
+
+            <Button
+                android:id="@+id/revsubmit"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="#ffb400"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

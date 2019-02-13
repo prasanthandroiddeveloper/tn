@@ -1,0 +1,295 @@
+{
+    "status": {
+        "status_message": "Success"
+    },
+    "stationDetails": [
+        {
+            "stationId": "1",
+            "station": "Ambur"
+        },
+        {
+            "stationId": "37",
+            "station": "Aruppukkottai"
+        },
+        {
+            "stationId": "2",
+            "station": "Avinasi"
+        },
+        {
+            "stationId": "68",
+            "station": "Chennai"
+        },
+        {
+            "stationId": "57",
+            "station": "Chidambaram"
+        },
+        {
+            "stationId": "110",
+            "station": "Chilakalurpet"
+        },
+        {
+            "stationId": "3",
+            "station": "Chinnamanur"
+        },
+        {
+            "stationId": "4",
+            "station": "Chittoor"
+        },
+        {
+            "stationId": "5",
+            "station": "Coimbatore"
+        },
+        {
+            "stationId": "82",
+            "station": "Cuddalore"
+        },
+        {
+            "stationId": "6",
+            "station": "Cumbam(Tamilnadu)"
+        },
+        {
+            "stationId": "86",
+            "station": "Dharmapuri"
+        },
+        {
+            "stationId": "8",
+            "station": "Dindigul"
+        },
+        {
+            "stationId": "9",
+            "station": "Erode"
+        },
+        {
+            "stationId": "113",
+            "station": "Ettiyapuram"
+        },
+        {
+            "stationId": "63",
+            "station": "Kadaiyanallur"
+        },
+        {
+            "stationId": "103",
+            "station": "Kallakuruchi"
+        },
+        {
+            "stationId": "60",
+            "station": "Kanyakumari"
+        },
+        {
+            "stationId": "10",
+            "station": "Karaikudi"
+        },
+        {
+            "stationId": "71",
+            "station": "Karur"
+        },
+        {
+            "stationId": "12",
+            "station": "Kovilpatti"
+        },
+        {
+            "stationId": "55",
+            "station": "Krishnagiri"
+        },
+        {
+            "stationId": "13",
+            "station": "Madurai"
+        },
+        {
+            "stationId": "84",
+            "station": "Maiyaldurai"
+        },
+        {
+            "stationId": "49",
+            "station": "Manamadurai"
+        },
+        {
+            "stationId": "46",
+            "station": "Marthandam"
+        },
+        {
+            "stationId": "59",
+            "station": "Mayiladuthurai"
+        },
+        {
+            "stationId": "15",
+            "station": "Nagercoil"
+        },
+        {
+            "stationId": "88",
+            "station": "Namakkal"
+        },
+        {
+            "stationId": "74",
+            "station": "Ottanchathiram"
+        },
+        {
+            "stationId": "91",
+            "station": "Ottanchattiram"
+        },
+        {
+            "stationId": "73",
+            "station": "Palani"
+        },
+        {
+            "stationId": "75",
+            "station": "Pallapatti"
+        },
+        {
+            "stationId": "50",
+            "station": "Paramakudi"
+        },
+        {
+            "stationId": "90",
+            "station": "Perambalur"
+        },
+        {
+            "stationId": "16",
+            "station": "Periyakulam"
+        },
+        {
+            "stationId": "77",
+            "station": "Pollachi"
+        },
+        {
+            "stationId": "17",
+            "station": "Polur"
+        },
+        {
+            "stationId": "83",
+            "station": "Pondicherry"
+        },
+        {
+            "stationId": "18",
+            "station": "Pudukottai"
+        },
+        {
+            "stationId": "64",
+            "station": "Puliyangudi"
+        },
+        {
+            "stationId": "48",
+            "station": "Rajapalayam"
+        },
+        {
+            "stationId": "19",
+            "station": "Rameswaram"
+        },
+        {
+            "stationId": "20",
+            "station": "Ramnad"
+        },
+        {
+            "stationId": "89",
+            "station": "Rasipuram"
+        },
+        {
+            "stationId": "21",
+            "station": "Salem"
+        },
+        {
+            "stationId": "114",
+            "station": "Sangagiri"
+        },
+        {
+            "stationId": "22",
+            "station": "Sattur"
+        },
+        {
+            "stationId": "58",
+            "station": "Sirkazhi"
+        },
+        {
+            "stationId": "23",
+            "station": "Sivakasi"
+        },
+        {
+            "stationId": "67",
+            "station": "Srivilliputhur"
+        },
+        {
+            "stationId": "24",
+            "station": "Tanjore"
+        },
+        {
+            "stationId": "47",
+            "station": "Tenkasi"
+        },
+        {
+            "stationId": "25",
+            "station": "Theni"
+        },
+        {
+            "stationId": "40",
+            "station": "Tiruchendur"
+        },
+        {
+            "stationId": "26",
+            "station": "Tirumangalam"
+        },
+        {
+            "stationId": "45",
+            "station": "Tirunelveli"
+        },
+        {
+            "stationId": "27",
+            "station": "Tirupathi"
+        },
+        {
+            "stationId": "87",
+            "station": "Tirupathi Package Tour"
+        },
+        {
+            "stationId": "98",
+            "station": "Tirupathur"
+        },
+        {
+            "stationId": "28",
+            "station": "Tirupattur"
+        },
+        {
+            "stationId": "29",
+            "station": "Tirupur"
+        },
+        {
+            "stationId": "30",
+            "station": "Tiruvannamalai"
+        },
+        {
+            "stationId": "32",
+            "station": "Trichy"
+        },
+        {
+            "stationId": "39",
+            "station": "Tuticorin"
+        },
+        {
+            "stationId": "72",
+            "station": "Udumalaipettai"
+        },
+        {
+            "stationId": "93",
+            "station": "Vaitheeswarankoil"
+        },
+        {
+            "stationId": "33",
+            "station": "Valliyur"
+        },
+        {
+            "stationId": "97",
+            "station": "VANNIYAMBADI"
+        },
+        {
+            "stationId": "62",
+            "station": "Vathalagundu"
+        },
+        {
+            "stationId": "35",
+            "station": "Vellore"
+        },
+        {
+            "stationId": "36",
+            "station": "Virudhnagar"
+        }
+    ]
+}

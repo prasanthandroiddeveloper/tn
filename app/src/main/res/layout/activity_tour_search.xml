@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#919191"
+        android:layout_marginBottom="52dp"
+        tools:listitem="@layout/tour_search_recycler"/>
+
+    <LinearLayout
+        android:id="@+id/linearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:text="@string/sort_by"
+            android:padding="5dp"
+            android:drawableTop="@drawable/sortblack16"
+            android:onClick="sorttours"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="filtertour"
+            android:gravity="center"
+            android:drawableTop="@drawable/filter16"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:text="@string/filters"
+            android:textColor="#Fff"/>
+
+    </LinearLayout>
+
+</FrameLayout>

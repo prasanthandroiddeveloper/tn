@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_an_account"
+            android:gravity="center"
+            android:textColor="#515151"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:cardElevation="3dp"
+            android:layout_gravity="center"
+            app:cardUseCompatPadding="true"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_now"
+                    android:gravity="center"
+                    android:textColor="#515151"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/fnameTil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fnameEt"
+                        android:background="@drawable/lineborder_black"
+                        android:hint="@string/first_name"
+                        android:maxLength="20"
+                        android:textSize="16sp"
+                        android:inputType="textPersonName"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lnameTil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lnameEt"
+                        android:hint="@string/last_name"
+                        android:background="@drawable/lineborder_black"
+                        android:textSize="16sp"
+                        android:maxLength="20"
+                        android:inputType="textPersonName"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/phoneTil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phoneEt"
+                        android:inputType="phone"
+                        android:background="@drawable/lineborder_black"
+                        android:textSize="16sp"
+                        android:maxLength="13"
+                        android:hint="@string/mobile_number"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/emaiTil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:maxLength="40"
+                        android:background="@drawable/lineborder_black"
+                        android:id="@+id/emailEt"
+                        android:textSize="16sp"
+                        android:inputType="textEmailAddress"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/pwdTil"
+                    android:layout_width="match_parent"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#919191"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:id="@+id/passEt"
+                        android:maxLength="20"
+                        android:background="@drawable/lineborder_black"
+                        android:textSize="16sp"
+                        android:inputType="textPassword"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/addressEt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+                        android:maxLines="1"
+                        android:inputType="textPersonName"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/cityEt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/city"
+                        android:maxLines="1"
+                        android:inputType="textPersonName"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/stateEt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/state"
+                        android:maxLines="1"
+                        android:inputType="textPersonName"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/pincodeEt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pincode"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="6"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/referEt"
+                    android:background="@drawable/lineborder_black"
+                    android:hint="@string/referral_code_optional"
+                    android:textAllCaps="true"
+                    android:layout_margin="5dp"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:inputType="textPersonName"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimary"
+                    android:onClick="user_reg"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:id="@+id/btnRegister"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#515151"
+                    android:text="@string/signup_terms"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#515151"
+                android:text="@string/already_have_an_account"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/regloginbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textAllCaps="false"
+                android:onClick="user_login"
+                android:text="@string/login_now"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

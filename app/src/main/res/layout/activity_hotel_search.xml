@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        android:onClick="modifysearch">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/datetv"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="-7dp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/loctv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/doorhang"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/roomtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                tools:ignore="ContentDescription"
+                app:srcCompat="@drawable/human" />
+
+            <TextView
+                 android:id="@+id/adulttv"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="15sp"
+                 android:textColor="@color/white" />
+
+            <ImageView
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:layout_margin="5dp"
+                 tools:ignore="ContentDescription"
+                 app:srcCompat="@drawable/child" />
+
+            <TextView
+                android:id="@+id/childtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:overScrollMode="never"
+            android:layout_marginBottom="51dp"
+            android:id="@+id/recyclerView"/>
+
+        <LinearLayout
+            android:id="@+id/nopeLayt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecedf2"
+            android:visibility="gone"
+            android:layout_marginBottom="51dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/nores"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sortBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="16sp"
+                android:onClick="sortby"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/sort16"
+                style="?android:attr/buttonBarButtonStyle"
+                android:paddingTop="5dp"
+                android:textAllCaps="false"
+                android:text="@string/sort_by"/>
+
+            <Button
+                android:id="@+id/filterBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingTop="5dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="filter"
+                android:textColor="#fff"
+                android:drawableTop="@drawable/filter16"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:text="@string/filters"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

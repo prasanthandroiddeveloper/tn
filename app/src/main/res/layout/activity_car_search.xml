@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tripnetra.tripnetra.cars.Car_Search_Act">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/picktv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/droptv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/datetv"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/timetv"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="51dp"
+        android:background="#eeeeee"
+        android:id="@+id/CarRecyclerView"/>
+
+    <LinearLayout
+        android:id="@+id/linearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sortBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:onClick="sortcars"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="#c0d60000"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/sort16"
+            android:textAllCaps="false"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/sort_by"/>
+
+        <Button
+            android:id="@+id/filterBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="filtercars"
+            android:textColor="#fff"
+            android:drawableTop="@drawable/filter16"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="#c0d60000"
+            android:text="@string/filters"/>
+
+    </LinearLayout>
+
+</FrameLayout>

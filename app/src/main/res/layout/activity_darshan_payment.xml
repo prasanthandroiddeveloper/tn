@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEFF4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#f5f5f5"
+            android:contentDescription="@string/logoimage"
+            android:src="@drawable/logo1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:text="Thank You For Booking With Us."
+            android:layout_margin="5dp"
+            android:textColor="#000"
+            android:background="#f7f6ec" android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Hotel Details"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:background="#E0F0F9"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#c9c9c9"/>
+
+                <TextView
+                    android:id="@+id/htlnameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/roomnightTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="2 Rooms / 3 Nights"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="TRIP123456789"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="Standard Double Bed Room Ac"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="Check-in Time: 12.00 AM"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="25dp"
+                        android:text="Check-In"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"/>
+
+                    <TextView
+                        android:id="@+id/FromTV"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="25dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="25dp"
+                        android:text="Check-Out"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/toTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="end"
+                        android:layout_marginStart="7dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+      <!--  <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Add Ons"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:background="#FEEBEA"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#c9c9c9"/>
+
+                <TextView
+                    android:id="@+id/AddnameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/AddurtnTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:id="@+id/adddateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+                <TextView
+                    android:id="@+id/addpriceTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="3dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:id="@+id/addonID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Add Ons"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="#FEEBEA"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#c9c9c9"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/addon"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+</HorizontalScrollView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="3dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Aptdc One Day Darshan Package"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:background="#faebe3"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#c9c9c9"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:text="Slot Time: 10.00 AM" />
+
+                <TextView
+                    android:id="@+id/darshandtTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="5dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Passenger Details"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:background="#dcf5f1"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#c9c9c9"/>
+
+                <LinearLayout
+                    android:id="@+id/recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/PassemlTv"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1.5"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/lines"
+                        android:text="tripnetrasingh@gmail.com"
+                        android:layout_marginStart="5dp"/>
+
+                    <TextView
+                        android:id="@+id/PassmblTv"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:text="9999999999"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/lines"
+                        android:layout_marginStart="5dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

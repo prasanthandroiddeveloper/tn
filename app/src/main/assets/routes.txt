@@ -1,0 +1,276 @@
+	{
+    "status": {
+        "status_message": "Success"
+    },
+    "availabletrips": [
+        {
+            "routeid": "9607",
+            "tripid": "588800",
+            "tripid_v2": "8-0900PM-10",
+            "subtripid": "588800",
+            "bustype": "A\/C Sleeper ",
+            "totalseats": "32",
+            "availseats": "29",
+            "fare": "905",
+            "servicetax": "5",
+            "convenienceChargePercent": 0,
+            "src": "Madurai",
+            "srcorder": "4742",
+            "dst": "Tirupathi",
+            "dstorder": "14042",
+            "deptime": "2018-05-20 21:00:00",
+            "arrtime": "2018-05-21 06:10:00",
+            "vehiclenumber": "",
+            "amenities": "",
+            "boardingpoint": {
+                "bpDetails": [
+                    {
+                        "id": "387261",
+                        "venue": "Mattuthavani Omni Bus Stand",
+                        "address": "(FROM VELLORE to TIRUPATHI PICKUP BUS\/VAN)-Sri Renugambal Travels No.17, Mattuthavani Omni Bus Stand, Madurai",
+                        "contactno": "9655903069 \/ 0452-4373069",
+                        "boardtime": "2018-05-20 21:00:00",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "13",
+                        "tripid": "9607",
+                        "sid": "8",
+                        "timedelay": "09:00 PM",
+                        "stationname": "Madurai"
+                    }
+                ]
+            },
+            "droppingpoint": {
+                "dpDetails": [
+                    {
+                        "id": "387270",
+                        "venue": "Dhanasri travels",
+                        "address": "srinivasa complex",
+                        "contactno": "08772255518",
+                        "timedelay": "06:10 AM",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "27",
+                        "tripid": "9607",
+                        "sid": "8"
+                    },
+                    {
+                        "id": "387271",
+                        "venue": "DHANASSRI TRAVELS",
+                        "address": "Dhanasri travel16 -24 Municipal shopping Complex opp.srinivasam ",
+                        "contactno": "08772255518\/ 08776459908 \/ 08099958889",
+                        "timedelay": "06:10 AM",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "27",
+                        "tripid": "9607",
+                        "sid": "8"
+                    }
+                ]
+            },
+            "cancellationpolicy": {
+                "terms": [
+                    {
+                        "hoursbefore": "24:00:00",
+                        "description": "before 24 hours",
+                        "refundpercentage": "90.00",
+                        "cancellationpercentage": "10.00"
+                    },
+                    {
+                        "hoursbefore": "12:00:00",
+                        "description": "before 12 hours",
+                        "refundpercentage": "75.00",
+                        "cancellationpercentage": "25.00"
+                    },
+                    {
+                        "hoursbefore": "04:00:00",
+                        "description": "before 4 hours",
+                        "refundpercentage": "50.00",
+                        "cancellationpercentage": "50.00"
+                    },
+                    {
+                        "hoursbefore": "-2400:00:00",
+                        "description": "Last 4 hours before or after travel",
+                        "refundpercentage": "0.00",
+                        "cancellationpercentage": "100.00"
+                    }
+                ]
+            }
+        },
+        {
+            "routeid": "9483",
+            "tripid": "584009",
+            "tripid_v2": "48-0600PM-24",
+            "subtripid": "584009",
+            "bustype": "A\/C Pushback Semi Sleeper ",
+            "totalseats": "40",
+            "availseats": "34",
+            "fare": "857",
+            "servicetax": "5",
+            "convenienceChargePercent": 0,
+            "src": "Madurai",
+            "srcorder": "775",
+            "dst": "Tirupathi",
+            "dstorder": "6000",
+            "deptime": "2018-05-20 21:45:00",
+            "arrtime": "2018-05-21 06:45:00",
+            "vehiclenumber": "",
+            "amenities": "",
+            "boardingpoint": {
+                "bpDetails": [
+                    {
+                        "id": "380279",
+                        "venue": "Mattuthavani Omni Bus Stand",
+                        "address": "Sri Renugambal Travels No.17, Mattuthavani Omni Bus Stand, Madurai",
+                        "contactno": "9655903069 \/ 0452-4373069",
+                        "boardtime": "2018-05-20 21:45:00",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "13",
+                        "tripid": "9483",
+                        "sid": "48",
+                        "timedelay": "09:45 PM",
+                        "stationname": "Madurai"
+                    }
+                ]
+            },
+            "droppingpoint": {
+                "dpDetails": [
+                    {
+                        "id": "380290",
+                        "venue": "Dhanasri&renugambal travels",
+                        "address": "srinivasa complex",
+                        "contactno": "08772255518",
+                        "timedelay": "06:45 AM",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "27",
+                        "tripid": "9483",
+                        "sid": "48"
+                    },
+                    {
+                        "id": "380291",
+                        "venue": "DHANASSRI TRAVELS",
+                        "address": "Dhanasri travel16 -24 Municipal shopping Complex opp.srinivasam ",
+                        "contactno": "08772255518\/ 08776459908 \/ 08099958889",
+                        "timedelay": "06:45 AM",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "27",
+                        "tripid": "9483",
+                        "sid": "48"
+                    }
+                ]
+            },
+            "cancellationpolicy": {
+                "terms": [
+                    {
+                        "hoursbefore": "24:00:00",
+                        "description": "before 24 hours",
+                        "refundpercentage": "90.00",
+                        "cancellationpercentage": "10.00"
+                    },
+                    {
+                        "hoursbefore": "12:00:00",
+                        "description": "before 12 hours",
+                        "refundpercentage": "75.00",
+                        "cancellationpercentage": "25.00"
+                    },
+                    {
+                        "hoursbefore": "04:00:00",
+                        "description": "before 4 hours",
+                        "refundpercentage": "50.00",
+                        "cancellationpercentage": "50.00"
+                    },
+                    {
+                        "hoursbefore": "-2400:00:00",
+                        "description": "Last 4 hours before or after travel",
+                        "refundpercentage": "0.00",
+                        "cancellationpercentage": "100.00"
+                    }
+                ]
+            }
+        },
+        {
+            "routeid": "9494",
+            "tripid": "585008",
+            "tripid_v2": "62-0545PM-38",
+            "subtripid": "585008",
+            "bustype": "Multi Axle Volvo B9r A\/C Semisleeper ",
+            "totalseats": "49",
+            "availseats": "47",
+            "fare": "857",
+            "servicetax": "5",
+            "convenienceChargePercent": 0,
+            "src": "Madurai",
+            "srcorder": "2995",
+            "dst": "Tirupathi",
+            "dstorder": "12000",
+            "deptime": "2018-05-20 22:30:00",
+            "arrtime": "2018-05-21 07:00:00",
+            "vehiclenumber": "",
+            "amenities": "",
+            "boardingpoint": {
+                "bpDetails": [
+                    {
+                        "id": "380814",
+                        "venue": "Mattuthavani Omni Bus Stand",
+                        "address": "Sri Renugambal Travels No.17, Mattuthavani Omni Bus Stand, Madurai",
+                        "contactno": "9655903069 \/ 0452-4373069",
+                        "boardtime": "2018-05-20 22:30:00",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "13",
+                        "tripid": "9494",
+                        "sid": "62",
+                        "timedelay": "10:30 PM",
+                        "stationname": "Madurai"
+                    }
+                ]
+            },
+            "droppingpoint": {
+                "dpDetails": [
+                    {
+                        "id": "380820",
+                        "venue": "DHANASSRI TRAVELS",
+                        "address": "Dhanasri travel16 -24 Municipal shopping Complex opp.srinivasam ",
+                        "contactno": "08772255518\/ 08776459908 \/ 08099958889",
+                        "timedelay": "07:00 AM",
+                        "td": "0",
+                        "status": "1",
+                        "stationid": "27",
+                        "tripid": "9494",
+                        "sid": "62"
+                    }
+                ]
+            },
+            "cancellationpolicy": {
+                "terms": [
+                    {
+                        "hoursbefore": "24:00:00",
+                        "description": "before 24 hours",
+                        "refundpercentage": "90.00",
+                        "cancellationpercentage": "10.00"
+                    },
+                    {
+                        "hoursbefore": "12:00:00",
+                        "description": "before 12 hours",
+                        "refundpercentage": "75.00",
+                        "cancellationpercentage": "25.00"
+                    },
+                    {
+                        "hoursbefore": "04:00:00",
+                        "description": "before 4 hours",
+                        "refundpercentage": "50.00",
+                        "cancellationpercentage": "50.00"
+                    },
+                    {
+                        "hoursbefore": "-2400:00:00",
+                        "description": "Last 4 hours before or after travel",
+                        "refundpercentage": "0.00",
+                        "cancellationpercentage": "100.00"
+                    }
+                ]
+            }
+        }
+    ]}

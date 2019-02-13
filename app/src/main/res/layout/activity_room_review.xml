@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainlay"
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_room_review_header"/>
+
+            <TextView
+                android:id="@+id/offertv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/offer"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/offerRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/offerlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/couponcode"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/app_name"
+                        android:textIsSelectable="true"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:background="@drawable/coupon"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/coupremove"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/remove"
+                        android:textColor="#000dc4"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offerlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/coupontext"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="60dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@drawable/box_full_round_corner"
+                        android:inputType="textCapCharacters"
+                        android:textSize="16sp"
+                        android:hint="@string/have_a_coupon_code"/>
+
+                    <Button
+                        android:id="@+id/couponapply"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/apply"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:onClick="applycoupon"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/coupvalidTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="7dp"
+                    android:visibility="gone"
+                    android:paddingEnd="2dp"
+                    android:layout_marginTop="-7dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/traveler_details"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/usetv"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="loginuser"
+                    android:text="@string/use_login_details"
+                    android:textColor="#368ecd"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reqlayt"
+                android:background="@color/white"
+                android:descendantFocusability="beforeDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_margin="1dp"
+                android:padding="2dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_billing_basic"/>
+
+                <TextView
+                    android:id="@+id/expecthead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/expected_check_in_time"
+                    android:textColor="#7c7c7c"
+                    android:textSize="14sp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/expectll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/expectedspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background"
+                        android:gravity="start|center_vertical"
+                        android:drawableEnd="@drawable/arrow1d"
+                        android:maxLines="1"
+                        android:text="@string/select_a_time_range"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/tariff_details"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/base_fare"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/basefare"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|end"
+                        android:textColor="#595959"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/couppriceLayt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/coupdiscTv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/coupon_discount"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/coupdiscprice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|end"
+                        android:textColor="#4CAF50"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9c9c9"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/sub_total"
+                        android:textColor="#595959"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/subtotal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|end"
+                        android:textColor="#595959"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/serviceTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/service_charge"
+                        android:textColor="#595959"
+                        android:textSize="17sp"  />
+
+                    <TextView
+                        android:id="@+id/servicecharge"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|end"
+                        android:textColor="#595959"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/serviceextratv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#c9c9c9"/>
+
+                <CheckBox
+                    android:id="@+id/cashCB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#919191"
+                    android:visibility="gone"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_marginStart="-6dp"
+                    android:textSize="17sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/grand_total"
+                        android:textSize="22sp"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/grandtotaltv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|end"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/total_savings"
+                        android:textColor="#4CAF50"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/savingstv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|end"
+                        android:textColor="#4CAF50"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/roomtermsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/roompricetv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/box_grey_fill_nopad"
+            style="?android:buttonBarButtonStyle"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            style="?android:buttonBarButtonStyle"
+            android:background="@color/colorPrimary"
+            android:onClick="continuepay"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="@string/proceed"
+            android:textSize="17sp"
+            tools:ignore="TooManyViews"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

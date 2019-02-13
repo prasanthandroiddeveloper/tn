@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mainLayt"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Passenger Details"
+        android:textSize="18dp"
+        android:background="#dfdddd"
+        android:textColor="@android:color/holo_orange_dark"
+        android:gravity="start"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="30dp"
+         android:layout_weight="0.7"
+         android:text="Passenger Name"
+         android:textSize="18sp"
+         android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/PnameTv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.7"
+            android:text="Passenger Age"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/PageTv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.7"
+            android:text="Passenger Gender"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/PgenTv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

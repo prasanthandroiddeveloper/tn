@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    tools:ignore="Autofill"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/mainLayt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/logoimage"
+            android:src="@drawable/load1" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="25sp"
+            android:textColor="#515151"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/happy_to_serve"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textColor="#9c9a9c"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tripEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/box_grey_fill_nopad"
+                android:maxLength="25"
+                android:hint="@string/enter_trip_id"
+                android:drawableStart="@drawable/tckt"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:drawablePadding="10dp"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/box_grey_fill_nopad"
+                android:maxLength="40"
+                android:hint="@string/enter_email"
+                android:drawableStart="@drawable/gmale"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_gravity="center">
+
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#9c9a9c" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn6"
+                    android:text="@string/submit"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/voucherLayt"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_marginBottom="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#eaeaea"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/resendTv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#fdab7c"
+                android:textColor="#000"
+                android:text="@string/resend_voucher"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"/>
+
+            <TextView
+                android:id="@+id/cancelTv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#fdab7c"
+                android:textColor="#000"
+                android:text="@string/cancel_booking"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

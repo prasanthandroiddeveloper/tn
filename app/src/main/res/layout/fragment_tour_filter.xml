@@ -1,0 +1,193 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.tripnetra.tripnetra.tours.fragments.Tour_Filter_Frag">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp"
+        android:text="@string/price_range"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="10dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/min_price"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/minval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/_0"
+                        android:textColor="#000"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="end|center"
+                        android:textSize="12sp"
+                        android:textColor="#000"
+                        android:text="@string/max_price"/>
+
+                    <TextView
+                        android:id="@+id/maxval"
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="end|center"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:textColor="#000"
+                        android:text="@string/_50000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.appyvet.rangebar.RangeBar
+                android:id="@+id/rangebar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                custom:pinMaxFont="0sp"
+                custom:barWeight="10dp"
+                custom:selectorSize="10dp"
+                custom:tickEnd="50000"
+                custom:tickInterval="1000"
+                custom:tickStart="0"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp"
+        android:text="@string/tour_type"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/CboxIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inside_city"
+                android:textColor="#000"/>
+
+            <CheckBox
+                android:id="@+id/CboxOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outside_city"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="#eeeeee"
+            android:text="@string/reset"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/filter"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/apply"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+[
+    {
+    "id":"1",
+    "name":"Kanipakam Package",
+    "price":"3000",
+    "duration":"1Hr",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    },
+    {
+    "id":"2",
+    "name":"Srikalahasti Package",
+    "price":"3500",
+    "duration":"2Hr",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    },
+    {
+    "id":"3",
+    "name":"Local Temples Package",
+    "price":"1500",
+    "duration":"1Hr",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    },
+    {
+    "id":"4",
+    "name":"Sightseen Package",
+    "price":"2000",
+    "duration":"1Hr",
+    "description":"includes Darshan,Tour,and Visit Local places"
+    }
+]

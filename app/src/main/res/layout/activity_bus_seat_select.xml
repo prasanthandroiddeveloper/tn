@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainlay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="51dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/deckLayt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lowerTv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/lower"
+                android:onClick="choosedeck"
+                android:gravity="center"
+                android:background="@drawable/select_seat_deck"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/upperTv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/upper"
+                android:onClick="choosedeck"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/empty_seat_deck"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:src="@drawable/steering"
+            tools:ignore="ContentDescription"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lst_items"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:overScrollMode="never"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center|bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/seats"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/seatsTv"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/pricetv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#bc0707"/>
+
+        <TextView
+            android:id="@+id/bookTv"
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/book"
+            android:onClick="booknow"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nopeTv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+</FrameLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/offerIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/hotels3"
+                android:scaleType="center"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#c4c4c4"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/applicable_on"
+                        android:textSize="18sp"
+                        android:textColor="#717171"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/applcbleTv"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="45dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/validTv"
+                        android:text="@string/valid_till"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#717171"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/validTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/view1"
+                        android:layout_alignTop="@id/applcbleTv"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c4c4c4"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/promo_code"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/codetv"
+                        android:onClick="copycode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:background="@drawable/box_grey_fill_nopad"
+                        android:textSize="17sp"
+                        tools:ignore="RelativeOverlap"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/codetv"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/tap_on_code_to_copy"
+                        android:textColor="#717171"
+                        android:textSize="15sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descrttv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#111111"
+                android:textSize="17sp"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/termsTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center|start"
+                    android:drawableEnd="@drawable/arrow1d"
+                    android:textSize="20sp"
+                    android:onClick="hidewv"
+                    android:text="@string/terms_and_conditions"
+                    android:layout_margin="10dp"/>
+
+                <com.tobiasrohloff.view.NestedScrollWebView
+                    android:id="@+id/longdeswv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_height="55dp"
+        android:text="@string/book"
+        android:textColor="@color/white"
+        android:onClick="bookaccomdation"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_back"/>
+
+</FrameLayout>

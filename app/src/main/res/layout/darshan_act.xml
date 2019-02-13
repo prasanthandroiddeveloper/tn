@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainlayt"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:id="@+id/psearchtv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/boxfill_radius"
+        android:drawableEnd="@drawable/addr"
+        android:imeOptions="actionNext"
+        android:paddingStart="7dp"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:paddingEnd="0dp"
+        android:hint="@string/select_hotel"
+        android:textColor="#000000"
+        android:drawableRight="@drawable/addr"
+        android:paddingLeft="7dp"
+        android:paddingRight="0dp" />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#c7c7c7" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginTop="0dp"
+        card_view:cardElevation="2dp"
+        card_view:contentPadding="7dp"
+        card_view:cardCornerRadius="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="110dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp">
+
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:onClick="stdate"
+                android:background="@drawable/lineborder_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_in"
+                    android:textSize="12sp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/cindatetv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:layout_marginTop="25dp"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/cinmontv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="40dp" />
+
+                <TextView
+                    android:id="@+id/cindaytv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="40dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:onClick="etdate"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/lineborder_black"
+                android:layout_marginStart="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/darshan_date"
+                    android:textSize="12sp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/darshandatetv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:layout_marginTop="25dp"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/darshanmontv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="40dp" />
+
+                <TextView
+                    android:id="@+id/darshandaytv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="40dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        card_view:cardElevation="2dp"
+        card_view:contentPadding="2dp"
+        card_view:cardCornerRadius="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="110dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="roomselect">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/lineborder_black"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="55dp"
+                    android:id="@+id/rcounttv"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="55dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/rooms"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="ContentDescription"
+                    android:background="@drawable/z1"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/lineborder_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/adults"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="ContentDescription"
+                    android:background="@drawable/z2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="130dp"
+                    android:id="@+id/ccounttv"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="130dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="120dp"
+                    android:text="@string/childs"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="120dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="95dp"
+                    tools:ignore="ContentDescription"
+                    android:background="@drawable/z3"
+                    android:layout_marginLeft="95dp" />
+
+                <TextView
+                    android:id="@+id/acounttv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="45dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/submit"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:onClick="submit"
+        android:id="@+id/search_button"
+        android:background="@drawable/rounded_corner1"/>
+
+</LinearLayout>

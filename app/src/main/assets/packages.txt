@@ -1,0 +1,166 @@
+[
+    {
+        "sightseen_id": "349",
+        "sightseen_name": "APTDC Darshan Package - 1 Day"
+    },
+    {
+        "sightseen_id": "291",
+        "sightseen_name": "Bangalore Tirupati Darshan Package "
+    },
+    {
+        "sightseen_id": "245",
+        "sightseen_name": "Bangalore Tirupati Darshan Package Fresh-up"
+    },
+    {
+        "sightseen_id": "324",
+        "sightseen_name": "Bangalore Tirupati One Darshan Package "
+    },
+    {
+        "sightseen_id": "311",
+        "sightseen_name": "Bangalore to Tirupati Darshan Package"
+    },
+    {
+        "sightseen_id": "284",
+        "sightseen_name": "Chennai One Day APTDC Darshan Package"
+    },
+    {
+        "sightseen_id": "307",
+        "sightseen_name": "Chennai Tirumala Darshan Package"
+    },
+    {
+        "sightseen_id": "254",
+        "sightseen_name": "Chennai Tirupati Darshan with CP Plan One Day Package "
+    },
+    {
+        "sightseen_id": "256",
+        "sightseen_name": "Cumbam(Tamil Nadu) Tirupati Darshan Package"
+    },
+    {
+        "sightseen_id": "345",
+        "sightseen_name": "Dhanasri Tirupati Balaji Darshan"
+    },
+    {
+        "sightseen_id": "257",
+        "sightseen_name": "Dharmapuri(TamilNadu) Tirupati Package Tour "
+    },
+    {
+        "sightseen_id": "258",
+        "sightseen_name": "Dindigul(TamilNadu) Tirupati Package Tour"
+    },
+    {
+        "sightseen_id": "259",
+        "sightseen_name": "Erode(TamilNadu) - Tirupati Package Tour"
+    },
+    {
+        "sightseen_id": "279",
+        "sightseen_name": "Hyderabad Tirupati Darshan Bus Package"
+    },
+    {
+        "sightseen_id": "340",
+        "sightseen_name": "Hyderabad Tirupati Darshan Flight Darshan"
+    },
+    {
+        "sightseen_id": "341",
+        "sightseen_name": "Hyderabad Tirupati Darshan Flight Package "
+    },
+    {
+        "sightseen_id": "309",
+        "sightseen_name": "Hyderabad Tirupati Darshan Package"
+    },
+    {
+        "sightseen_id": "351",
+        "sightseen_name": "IRCTC  Darshan Package 3 Days"
+    },
+    {
+        "sightseen_id": "327",
+        "sightseen_name": "IRCTC Darshan Package 3 Star Accommodation"
+    },
+    {
+        "sightseen_id": "312",
+        "sightseen_name": "IRCTC One Day Darshan Package "
+    },
+    {
+        "sightseen_id": "331",
+        "sightseen_name": "IRCTC One Day Package 5 Star Accommodation"
+    },
+    {
+        "sightseen_id": "305",
+        "sightseen_name": "IRCTC Two Days Pacakage"
+    },
+    {
+        "sightseen_id": "260",
+        "sightseen_name": "Kovilpatti(TamilNadu) Tirupati Package Tour"
+    },
+    {
+        "sightseen_id": "261",
+        "sightseen_name": "Madurai (TamilNadu) -Tirupati Package Tour"
+    },
+    {
+        "sightseen_id": "262",
+        "sightseen_name": "Nagercoil (TamilNadu) - Tirupati Package Tour"
+    },
+    {
+        "sightseen_id": "353",
+        "sightseen_name": "Palakkad Balaji Darshan Package"
+    },
+    {
+        "sightseen_id": "263",
+        "sightseen_name": "Periyakulam (TamilNadu) - Tirupati Package Tour"
+    },
+    {
+        "sightseen_id": "264",
+        "sightseen_name": "Salem(TamilNadu) - Tiruapti package"
+    },
+    {
+        "sightseen_id": "265",
+        "sightseen_name": "Sattur(TamilNadu) - Tirupati Package "
+    },
+    {
+        "sightseen_id": "275",
+        "sightseen_name": "Shimoga Tirupati Balaji Darshan"
+    },
+    {
+        "sightseen_id": "350",
+        "sightseen_name": "SPG  Travel Tirupati Darshan"
+    },
+    {
+        "sightseen_id": "266",
+        "sightseen_name": "Theni (TamilNadu) -Tirupati Package"
+    },
+    {
+        "sightseen_id": "290",
+        "sightseen_name": "Three Days Chennai Tirupati Darshan"
+    },
+    {
+        "sightseen_id": "352",
+        "sightseen_name": "Thrissur Balaji Darshan Package"
+    },
+    {
+        "sightseen_id": "267",
+        "sightseen_name": "Tirunelveli (TamilNadu) - Tirupati Package "
+    },
+    {
+        "sightseen_id": "268",
+        "sightseen_name": "Tirupur(TamilNadu) - Tirupati Package"
+    },
+    {
+        "sightseen_id": "269",
+        "sightseen_name": "Trichy(TamilNadu) - Tirupati Package"
+    },
+    {
+        "sightseen_id": "270",
+        "sightseen_name": "Valliyur(TamilNadu) - Tirupati Package"
+    },
+    {
+        "sightseen_id": "271",
+        "sightseen_name": "Vathalagundu(TamilNadu) - Tirupati Package "
+    },
+    {
+        "sightseen_id": "297",
+        "sightseen_name": "Vijayawada Tirumala Darshan Package "
+    },
+    {
+        "sightseen_id": "273",
+        "sightseen_name": "VIRUDHNAGAR(TAMIL NADU) - TIRUPATHI PACKAGE TOUR"
+    }
+]

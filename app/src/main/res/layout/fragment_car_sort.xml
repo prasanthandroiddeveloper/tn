@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:background="@drawable/lineborder_black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/sort_by" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/box_grey_bottom"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:drawableStart="@drawable/name"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nameasort"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="0dp"
+                android:drawableEnd="@drawable/ticknew"
+                android:text="@string/a_z"
+                android:drawablePadding="10dp"
+                android:gravity="end|center"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/namezsort"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="20dp"
+            android:paddingStart="0dp"
+            android:drawableEnd="@drawable/ticknew"
+            android:text="@string/z_a"
+            android:drawablePadding="10dp"
+            android:gravity="end|center"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:background="@drawable/box_grey_bottom"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="60dp"
+                android:drawableStart="@drawable/price1"
+                android:gravity="center"
+                android:text="@string/price"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pricelowsort"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="20dp"
+                android:paddingStart="0dp"
+                android:drawableEnd="@drawable/ticknew"
+                android:text="@string/low_to_high"
+                android:drawablePadding="10dp"
+                android:gravity="end|center"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/pricehighsort"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="20dp"
+            android:paddingStart="0dp"
+            android:drawableEnd="@drawable/ticknew"
+            android:text="@string/high_to_low"
+            android:drawablePadding="10dp"
+            android:gravity="end|center"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+{
+    "routeid": 9607,
+    "tripid": 588800,
+    "bpoint": 387261,
+    "dpoint": 387270,
+    "noofseats": 3,
+    "mobileno": "7677033212",
+    "email": "spkrishnan@gmail.com",
+    "totalfare": 2850.75,
+    "seatInfo": {
+        "passengerInfo": [
+            {
+                "Name": "Final APITour",
+                "gender": "Male",
+                "seatNo": "U1",
+                "age": "14",
+                "fare": "950.25"
+            },
+            {
+                "Name": "Final API Tour",
+                "gender": "Male",
+                "seatNo": "U2",
+                "age": "15",
+                "fare": "950.25"
+            },
+            {
+                "Name": "Final API Tour",
+                "gender": "Male",
+                "seatNo": "U3",
+                "age": "23",
+                "fare": "950.25"
+            }
+        ]
+    }
+}

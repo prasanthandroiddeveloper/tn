@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#528fff</color>
+<color name="colorPrimaryDark">#303F9F</color>
+<color name="colorAccent">#FF4081</color>
+<color name="black">#000000</color>
+<color name="white">#FFFFFF</color>
+    <color name="gray">#b2afae</color>
+<color name="lblue">#528fff</color>
+<color name="dblue">#0c4dc6</color>
+<color name="soldco">#0065b8</color>
+</resources>
