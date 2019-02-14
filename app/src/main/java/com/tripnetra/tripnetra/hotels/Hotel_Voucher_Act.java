@@ -9,10 +9,6 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.tripnetra.tripnetra.G_Class;
 import com.tripnetra.tripnetra.LoadingDialog;
 import com.tripnetra.tripnetra.R;
@@ -20,10 +16,6 @@ import com.tripnetra.tripnetra.rest.VolleyRequester;
 import com.tripnetra.tripnetra.utils.Config;
 import com.tripnetra.tripnetra.utils.SharedPrefs;
 import com.tripnetra.tripnetra.utils.Utils;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
